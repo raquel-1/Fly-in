@@ -35,3 +35,6 @@ class Zone:
 Why we chose `@dataclass`: 
  *Boilerplate Elimination.* It automatically generates the `__init__` constructor based on type annotations, drastically reducing repetitive self-assignment code (`self.x = x`).
 
+---
+links:
+- [@property en Python](https://ellibrodepython.com/decorador-property-python): A built-in decorator that allows you to turn a class method into an attribute.
