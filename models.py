@@ -9,11 +9,13 @@ class ZoneType(Enum):
     RESTRICTED = "restricted"
     PRIORITY = "priority"
 
+
 class DroneState(Enum):
     """Types of states of the drone"""
     IN_ZONE = "in_zone"
     IN_TRANSIT = "in_transit"
     DELIVERED = "delivered"
+
 
 @dataclass
 class Zone:
@@ -33,6 +35,7 @@ class Zone:
             return 2
         return 1
 
+
 @dataclass
 class Drone:
     """A drone moving through the network"""
@@ -51,6 +54,7 @@ class Drone:
         and synchronization errors
         """
         return f"D{self.drone_id}"
+
 
 @dataclass
 class Connection:
